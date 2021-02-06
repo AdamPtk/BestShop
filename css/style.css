@@ -175,3 +175,138 @@ header nav ul li a:hover {
     font-size: 1.0625rem;
     color: var(--color-grey);
 }
+
+.benefits {
+    padding: 105px 0;
+    background: var(--color-light-grey);
+}
+
+.benefits .container {
+    width: 1124px;
+    margin: 0 auto;
+}
+
+.benefits-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 37px;
+    background: var(--color-white);
+    border-radius: 5px;
+    border: 1px solid #E8E9ED;
+}
+
+.benefits-container:first-child .benefits-container-column:first-child {
+    margin-left: 36px;
+}
+
+.benefits h2 {
+    font-size: 2rem;
+}
+
+.benefits p {
+    line-height: 1.375rem;
+    margin-top: 30px;
+}
+
+.benefits p::after {
+    content: "";
+    display: block;
+    width: 327px;
+    height: 4px;
+    margin-top: 50px;
+    background: var(--color-green);
+}
+
+.benefits-container:first-child p::after {
+    background: var(--color-redish);
+}
+
+.benefits-container:nth-child(2) p::after {
+    background: var(--color-primary);
+}
+
+.benefits-img-macbook img {
+    width: 386px;
+    height: auto;
+    position: relative;
+    z-index: 2;
+}
+
+.benefits-img-macbook::before {
+    content: "";
+    display: block;
+    width: 180px;
+    height: 180px;
+    border-radius: 41px;
+    transform: rotate(45deg);
+    background: var(--color-redish);
+    position: absolute;
+    right: 0;
+    top: -40px;
+    z-index: 0;
+}
+
+.benefits-img-macbook {
+    margin: 113px 117px 38px 169px;
+    position: relative;
+}
+
+.benefits-container:nth-child(2) {
+    flex-direction: row-reverse;
+}
+
+.benefits-img-iphone img {
+    width: 426px;
+    height: auto;
+    position: relative;
+    z-index: 2;
+}
+
+.benefits-img-iphone::before {
+    content: "";
+    display: block;
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    background: var(--color-primary);
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 0;
+}
+
+.benefits-img-iphone {
+    margin: 29px 192px 13px 70px;
+    position: relative;
+}
+
+.benefits-container-last {
+    display: flex;
+    justify-content: space-between;
+}
+
+.benefits-container-last  .element-1,
+.benefits-container-last  .element-2 {
+    border-radius: 5px;
+    border: 1px solid #E8E9ED;
+}
+
+.benefits-container-last  .element-1 {
+    background: var(--color-white);
+    max-width: 600px;
+    padding: 69px 34px 70px 35px;
+}
+
+.benefits-container-last  .element-2 {
+    background: var(--color-green);
+}
+
+.benefits-container-last  .element-2 img {
+    margin: 98px 82px 64px 62px;
+}
+
+.benefits-container-last img {
+    width: 295px;
+    height: auto;
+}
