@@ -38,7 +38,7 @@ a {
     color: var(--color-white);
     font-weight: 700;
     border-radius: 40px;
-    padding: 16px 65px;
+    padding: 16px 57px;
     display: inline-block;
 }
 
@@ -360,6 +360,8 @@ header nav ul li a:hover {
     left: 50%;
     bottom: -24px;
     transform: translate(-50%, 0);
+    font-size: 0.8125rem;
+    font-weight: 700;
 }
 
 .pricing-box-basic {
@@ -367,7 +369,13 @@ header nav ul li a:hover {
 }
 
 .pricing-box-basic .btn {
-    background: var(--color-redish);;
+    background: var(--color-redish);
+}
+
+.pricing-box-basic .btn:hover {
+    color: var(--color-redish);
+    border: 1px solid var(--color-redish);
+    background: var(--color-white);
 }
 
 .pricing-box-professional {
@@ -379,12 +387,24 @@ header nav ul li a:hover {
     background: var(--color-primary);
 }
 
+.pricing-box-professional .btn:hover {
+    color: var(--color-primary);
+    border: 1px solid var(--color-primary);
+    background: var(--color-white);
+}
+
 .pricing-box-premium {
     --leading-color: var(--color-green);
 }
 
 .pricing-box-premium .btn {
     background: var(--color-green);
+}
+
+.pricing-box-premium .btn:hover {
+    color: var(--color-green);
+    border: 1px solid var(--color-green);
+    background: var(--color-white);
 }
 
 .pricing-mains .price{
@@ -429,3 +449,139 @@ header nav ul li a:hover {
     background-image: url("../assets/Close.svg");
 }
 
+.contact-container {
+    width: 896px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-column {
+    max-width: 50%;
+}
+
+.contact-column h1 {
+    font-size: 49px;
+}
+
+.contact-column p {
+    margin: 22px 0 40px;
+}
+
+.contact-column a {
+    display: inline-block;
+    margin-right: 20px;
+    color: var(--color-grey);
+    text-decoration: none;
+}
+
+.contact-column img {
+    margin-right: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.typing-field {
+    display: flex;
+    flex-direction: column;
+}
+
+.typing-field:nth-child(2) {
+    margin: 42px 0 30px;
+}
+
+.typing-field label {
+    font-size: 0.6875rem;
+    font-weight: 700;
+    letter-spacing: 0.205rem;
+    text-transform: uppercase;
+    color: var(--color-primary);
+}
+
+.typing-field input {
+    border: none;
+    border-bottom: 1px solid var(--color-grey);
+    line-height: 2.625rem;
+}
+
+.agreement label {
+    display: block;
+    position: relative;
+    padding-left: 34px;
+    margin-bottom: 20px;
+    font-size: 0.75rem;
+    line-height: 1.0625rem;
+    color: var(--color-grey);
+    cursor: pointer;
+}
+
+.agreement input {
+    position: absolute;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    cursor: pointer;
+  }
+
+.agreement span {
+    height: 24px;
+    width: 24px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--color-white);
+    border: 1px solid var(--color-grey);
+    border-radius: 4px;
+}
+
+.agreement input:checked + span {
+    background-image: url("../assets/Checkmark.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+form .btn {
+    align-self: flex-end;
+    padding: 20px 97px;
+    border: none;
+    background: var(--color-primary);
+    box-shadow: 5px 10px 14px var(--color-primary-shadow);
+    font-size: 0.8125rem;
+    font-weight: 700;
+}
+
+form .btn:hover {
+    border: 1px solid var(--color-primary);
+    background: var(--color-white);
+    color: var(--color-primary);
+}
+
+footer {
+    margin-top: 60px;
+    box-shadow: 0px -5px 40px  var(--color-black-shadow);
+    height: 90px;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+footer h1 {
+    font-size: 1.625rem;
+    margin-bottom: 7px;
+}
+
+footer p {
+    font-size: 0.6875rem;
+    color: var(--color-grey);
+}
+
+footer img {
+    margin-right: 20px;
+}
