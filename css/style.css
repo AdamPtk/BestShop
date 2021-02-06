@@ -310,3 +310,122 @@ header nav ul li a:hover {
     width: 295px;
     height: auto;
 }
+
+.pricing {
+    margin: 100px 0 150px;
+    text-align: center;
+}
+
+.pricing-container {
+    width: 1266px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pricing h1 {
+    font-size: 2rem;
+    margin-bottom: 50px;
+}
+
+.pricing h2 {
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.pricing p:nth-child(3) {
+    font-family: var(--font-raleway);
+    font-size: 0.75rem;
+    font-weight: 700;
+}
+
+.pricing li {
+    font-size: 0.875rem;
+}
+
+.pricing .price {
+    font-size: 2.875rem;
+}
+
+.pricing-box {
+    border: 1px solid var(--leading-color);
+    border-radius: 18px;
+    position: relative;
+    padding: 34px 119px 80px;
+}
+
+.pricing-box .btn {
+    position: absolute;
+    left: 50%;
+    bottom: -24px;
+    transform: translate(-50%, 0);
+}
+
+.pricing-box-basic {
+    --leading-color: var(--color-redish);
+}
+
+.pricing-box-basic .btn {
+    background: var(--color-redish);;
+}
+
+.pricing-box-professional {
+    --leading-color: var(--color-primary);
+    box-shadow: 5px 10px 27px var(--color-primary-shadow);
+}
+
+.pricing-box-professional .btn {
+    background: var(--color-primary);
+}
+
+.pricing-box-premium {
+    --leading-color: var(--color-green);
+}
+
+.pricing-box-premium .btn {
+    background: var(--color-green);
+}
+
+.pricing-mains .price{
+    margin: 28px auto 20px;
+}
+
+.pricing-mains-basic {
+    margin-bottom: 80px;
+}
+
+.pricing-mains-professional {
+    margin-bottom: 61px;
+}
+
+.pricing-mains-premium {
+    margin-bottom: 45px;
+}
+
+.pricing-box li {
+    margin-bottom: 20px;
+}
+
+.pricing-box-professional li {
+    margin-bottom: 25px;
+}
+
+.pricing-yes::before {
+    content: "";
+    width: 11px;
+    height: 11px;
+    display: inline-block;
+    margin-right: 10px;
+    background-image: url("../assets/Ckechmark-1.svg");
+}
+
+.pricing-no::before {
+    content: "";
+    width: 11px;
+    height: 11px;
+    display: inline-block;
+    margin-right: 10px;
+    background-image: url("../assets/Close.svg");
+}
+
