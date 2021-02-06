@@ -1,18 +1,177 @@
+/* Questions
+1. Po co dodawać przy hoverze border-bottom "transparent"
+2. Czy używać klasy mimo, że jesteśmy w stanie dostać się do elementów bez nich? */
+
 :root {
     --color-primary: #08A6E4;
     --color-primary-shadow: rgba(7, 172, 230, .16);
+    --color-black-shadow: rgba(0, 0, 0, .16);
     --color-redish: #FB3B64;
     --color-green: #55DFB4;
     --color-black: #000000;
     --color-white: #ffffff;
     --color-grey: #A5A5A5;
     --color-light-grey: #F7F7F7;
-    --button-radius: 35px;
     --font-raleway: "Raleway", sans-serif;
     --font-open-sans: "Open Sans", sans-serif;
 }
+
+/* Global styles */
 
 * {
     box-sizing: border-box;
 }
 
+body {
+    font-family: var(--font-open-sans);
+}
+
+h1, h2 {
+    font-family: var(--font-raleway);
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    color: var(--color-white);
+    font-weight: 700;
+    border-radius: 40px;
+    padding: 16px 65px;
+    display: inline-block;
+}
+
+.logo {
+    font-family: var(--font-raleway);
+    font-size: 2rem;
+    font-weight: 300;
+    color: var(--color-primary);
+}
+
+.container {
+    width: 1352px;
+    margin: 0 auto;
+}
+
+/* Main styles */
+
+header {
+    height: 70px;
+    box-shadow: 0 3px 6px var(--color-black-shadow);
+}
+
+header .container {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul {
+    display: flex;
+}
+
+header nav ul li {
+    padding: 0 47px;
+}
+
+header nav ul li:last-child {
+    padding-right: 0;
+}
+
+header nav ul li a {
+    font-size: 0.6875rem;
+    font-weight: 700;
+    color: var(--color-grey);
+    letter-spacing: 0.205rem;
+    text-transform: uppercase;
+    padding: 28px 12px 27px;
+}
+
+header nav ul li a:hover {
+    color: var(--color-black);
+    border-bottom: 4px solid var(--color-primary);
+}
+
+.opening div {
+    text-align: center;
+    margin-top: 130px;
+}
+
+.opening h1 {
+    font-size: 3.0625rem;
+}
+
+.opening p {
+    margin: 20px 0 38px;
+}
+
+.opening .btn {
+    background: var(--color-primary);
+    box-shadow: 5px 10px 14px var(--color-primary-shadow);
+    padding: 22px 157px;
+}
+.opening img {
+    width: 100%;
+    height: auto;
+}
+
+.statistics .container {
+    margin: 100px auto 120px;
+    text-align: center;
+}
+
+.statistics .container h1 {
+    font-size: 2rem;
+}
+
+.statistics-container {
+    max-width: 780px;
+    margin: 100px auto 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.statistics-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.statistics-column .circle {
+    width: 63px;
+    height: 63px;
+    border-radius: 50%;
+    position: relative;
+}
+
+.statistics-column .circle img {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.statistics-column:first-child .circle {
+    background: var(--color-redish);
+}
+
+.statistics-column:nth-child(2) .circle {
+    background: var(--color-primary);
+}
+
+.statistics-column:last-child .circle {
+    background: var(--color-green);
+}
+
+.statistics-column h2 {
+    font-size: 1.25rem;
+    font-weight: 800;
+    letter-spacing: 0.375rem;
+    margin: 14px auto 19px; 
+}
+
+.statistics-column p {
+    font-size: 1.0625rem;
+    color: var(--color-grey);
+}
