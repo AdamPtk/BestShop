@@ -1,0 +1,37 @@
+@import "../settings/mixins";
+@import "../settings/media";
+
+* {
+    margin: 0;
+    padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: $font-open-sans;
+}
+
+h1 {
+	font-family: $font-raleway;
+}
+h2 {
+	font-family: $font-raleway;
+}
+a {
+	text-decoration: none;
+}
+.btn {
+	color: $color-white;
+	font-weight: 700;
+	border-radius: 40px;
+	padding: 16px 57px;
+	display: inline-block;
+}
+
+.container {
+	width: 100%;
+	padding: 0 15px;
+    margin: 0 auto;
+	@include breakpoint-min(xxl) {
+		width: 1352px;
+	}
+}

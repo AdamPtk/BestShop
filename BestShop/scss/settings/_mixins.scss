@@ -1,0 +1,10 @@
+@import "colors";
+@import "fonts";
+
+@mixin logo {
+    font-family: $font-raleway;
+	font-size: 2rem;
+	font-weight: 300;
+	color: $color-primary;
+    display: block;
+}
