@@ -31,7 +31,5 @@ a {
 	width: 100%;
 	padding: 0 15px;
     margin: 0 auto;
-	@include breakpoint-min(xxl) {
-		width: 1352px;
-	}
+	max-width: 1352px;
 }

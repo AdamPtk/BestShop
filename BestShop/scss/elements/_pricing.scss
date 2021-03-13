@@ -1,0 +1,152 @@
+.pricing {
+    margin: 50px 20px;
+    h1 {
+        font-size: 2.25rem;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    h2 {
+        font-size: 1.25rem;
+        font-weight: 700;
+    }
+    p {
+        &:nth-of-type(2) {
+            font-family: $font-raleway;
+            font-size: 0.75rem;
+            font-weight: 700;
+        }
+    }
+    li {
+		font-size: 0.875rem;
+        margin-bottom: 20px;
+	}
+	.price {
+		font-size: 2.875rem;
+        font-weight: 300;
+        margin: 14px 0 5px;
+	}
+    .prices {
+        max-width: 1266px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @include breakpoint-min(xxl) {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+    .box {
+        border: 1px solid;
+        border-radius: 18px;
+        position: relative;
+        margin-bottom: 50px;
+        padding: 25px;
+        width: 100%;
+        max-width: 340px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @include breakpoint-min(xxl) {
+            flex-direction: column;
+            justify-content: space-between;
+        }
+    }
+    .btn {
+        position: absolute;
+		left: 50%;
+		bottom: 0;
+		transform: translate(-50%, 50%);
+		font-size: 0.8125rem;
+		font-weight: 700;
+    }
+    .basic {
+        border-color: $color-redish;
+        .price {
+		    color: $color-redish;
+            margin-bottom: 18px;
+        }
+        .btn {
+            background: $color-redish;
+            &:hover {
+                color: $color-redish;
+                border: 1px solid $color-redish;
+                background: $color-white;
+            }
+        }
+    }
+    .professional {
+        border-color: $color-primary;
+        box-shadow: 5px 10px 27px $color-primary-shadow;
+        max-width: 370px;
+        .mains {
+            @include breakpoint-min(xxl) {
+                margin-bottom: 60px;
+            }
+        }
+        .price {
+            color: $color-primary;
+        }
+        .btn {
+            background: $color-primary;
+            &:hover {
+                color: $color-primary;
+                border: 1px solid $color-primary;
+                background: $color-white;
+            }
+        }
+        li {
+            margin-bottom: 25px;
+        }
+    }
+    .premium {
+        border-color: $color-green;
+        @include breakpoint-max(xxl) {
+            margin-bottom: 0;
+        }
+        .price {
+            color: $color-green;
+        }
+        .btn {
+            background: $color-green;
+            &:hover {
+                color: $color-green;
+                border: 1px solid $color-green;
+                background: $color-white;
+            }
+        }
+    }
+    .mains {
+        text-align: center;
+        width: 40%;
+        @include breakpoint-min(xxl) {
+            margin-bottom: 50px;
+        }
+        + ul {
+            width: 50%;
+            @include breakpoint-min(xxl) {
+                text-align: center;
+            }
+        }
+    }
+    .yes {
+        &::before {
+            content: "";
+            width: 11px;
+            height: 11px;
+            display: inline-block;
+            margin-right: 10px;
+            background-image: url("../../assets/Ckechmark-1.svg");
+        }
+    }
+    .no {
+        &::before {
+            content: "";
+            width: 11px;
+            height: 11px;
+            display: inline-block;
+            margin-right: 10px;
+            background-image: url("../../assets/Close.svg");
+        }
+    }
+}

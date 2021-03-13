@@ -1,0 +1,23 @@
+footer {
+	box-shadow: 0px -5px 40px $color-black-shadow;
+	height: 90px;
+    display: flex;
+    align-items: center;
+	.container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		// padding: 20px 0;
+	}
+	.logo {
+		@include logo(1.625rem);
+		margin-bottom: 7px;
+	}
+	p {
+		font-size: 0.6875rem;
+		color: $color-grey;
+	}
+	img {
+		margin-right: 20px;
+	}
+}

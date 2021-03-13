@@ -1,0 +1,108 @@
+.contact {
+    .container {
+        max-width: 896px;
+        display: flex;
+        flex-direction: column;
+        @include breakpoint-min(lg) {
+            flex-direction: row;
+        }
+    }
+    .questions {
+        @include breakpoint-min(lg) {
+            width: 50%;
+            margin-top: 30px;
+        }
+        h1 {
+            font-size: 2.5rem;
+        }
+        p {
+            margin: 20px 0 30px;
+        }
+        a {
+            display: flex;
+            align-items: center;
+            color: $color-grey;
+        }
+        img {
+            margin-right: 10px;
+        }
+    }
+    .data {
+        margin: 30px 0;
+        @include breakpoint-min(lg) {
+            width: 50%;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        .typing-field {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 30px;
+            label {
+                font-size: 0.6875rem;
+                font-weight: 700;
+                letter-spacing: 0.205rem;
+                text-transform: uppercase;
+                color: $color-primary;
+            }
+            input {
+                border: none;
+                border-bottom: 1px solid $color-grey;
+                line-height: 2.625rem;
+            }
+        }
+        .agreement {
+            label {
+                display: block;
+                position: relative;
+                margin-bottom: 20px;
+                padding-left: 34px;
+                font-size: 0.75rem;
+                line-height: 1.0625rem;
+                color: $color-grey;
+                cursor: pointer;
+            }
+            input {
+                position: absolute;
+                width: 0;
+                height: 0;
+                opacity: 0;
+                &:checked {
+                    + span {
+                        background-image: url("../../assets/Checkmark.svg");
+                        background-position: center;
+                        background-repeat: no-repeat;
+                    }
+                }
+            }
+            span {
+                height: 24px;
+                width: 24px;
+                position: absolute;
+                top: 0;
+                left: 0;
+                background-color: $color-white;
+                border: 1px solid $color-grey;
+                border-radius: 4px;
+            }
+        }
+        .btn {
+            align-self: flex-end;
+            padding: 20px 97px;
+            border: none;
+            background: $color-primary;
+            box-shadow: 5px 10px 14px $color-primary-shadow;
+            font-size: 0.8125rem;
+            font-weight: 700;
+            border: 1px solid transparent;
+            cursor: pointer;
+            &:hover {
+                border: 1px solid $color-primary;
+                background: $color-white;
+                color: $color-primary;
+            }
+        }
+    }
+}
