@@ -605,6 +605,192 @@ header .nav a:hover {
   background-image: url("../../assets/Close.svg");
 }
 
+.calculator {
+  padding: 80px 0;
+  background-color: #F7F7F7;
+}
+@media (max-width: 991.98px) {
+  .calculator {
+    padding: 30px 15px;
+  }
+}
+.calculator h1 {
+  text-align: center;
+  font-size: 2.25rem;
+}
+.calculator .wrapper {
+  max-width: 865px;
+  margin: 50px auto 0;
+  display: flex;
+}
+@media (max-width: 991.98px) {
+  .calculator .wrapper {
+    display: block;
+  }
+}
+.calculator form {
+  width: 50%;
+  margin-right: 20px;
+}
+@media (max-width: 991.98px) {
+  .calculator form {
+    width: 100%;
+    margin-right: 0;
+  }
+}
+.calculator form .number,
+.calculator form .input {
+  color: #A5A5A5;
+  width: 100%;
+  border-radius: 6px;
+  border: 1px solid #08A6E4;
+  padding: 11px 20px;
+  line-height: 1em;
+  font-size: 0.8125rem;
+  box-shadow: 0px 3px 6px rgba(7, 172, 230, 0.16);
+  margin-bottom: 20px;
+  background-color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+}
+.calculator form .number::-moz-placeholder {
+  color: #A5A5A5;
+}
+.calculator form .number:-ms-input-placeholder {
+  color: #A5A5A5;
+}
+.calculator form .number::placeholder {
+  color: #A5A5A5;
+}
+.calculator form .number:focus {
+  outline: none;
+}
+.calculator form .select {
+  position: relative;
+}
+.calculator form .select .input {
+  position: relative;
+  height: 40px;
+  vertical-align: middle;
+  padding: 13px 20px;
+  cursor: pointer;
+}
+.calculator form .select .input::after {
+  content: "";
+  background-image: url("../assets/Arrow.svg");
+  width: 22px;
+  height: 22px;
+  display: block;
+  position: absolute;
+  right: 14px;
+  top: 9px;
+}
+.calculator form .select .dropdown {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  background-color: white;
+  width: 100%;
+  border-radius: 6px;
+  border: 1px solid #FB3B64;
+  overflow: hidden;
+}
+.calculator form .select .dropdown li {
+  font-size: 13px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+.calculator form .select .dropdown li:hover {
+  background-color: #F7F7F7;
+}
+.calculator form .select.open .input::after {
+  transform: rotate(180deg);
+}
+.calculator form .select.open .dropdown {
+  display: block;
+}
+.calculator form .checkbox {
+  display: block;
+  position: relative;
+  padding-left: 40px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 0.8125rem;
+  color: #A5A5A5;
+}
+.calculator form .checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.calculator form .checkbox input:checked ~ .check {
+  background-image: url(../assets/Checkmark.svg);
+  background-position: center;
+  background-size: 50%;
+  background-repeat: no-repeat;
+}
+.calculator form .checkbox .text {
+  padding-top: 4px;
+}
+.calculator form .checkbox .check {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #ffffff;
+  border: 1px solid #A5A5A5;
+  border-radius: 4px;
+}
+.calculator .summary {
+  width: 50%;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 991.98px) {
+  .calculator .summary {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 30px;
+  }
+}
+.calculator .summary .total,
+.calculator .summary .item {
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  border-radius: 6px;
+  justify-content: space-between;
+  align-items: center;
+  color: #ffffff;
+  font-size: 0.875rem;
+  display: none;
+}
+.calculator .summary .total.open,
+.calculator .summary .item.open {
+  display: flex;
+}
+.calculator .summary .total {
+  width: 50%;
+  align-self: flex-end;
+  margin-top: 22px;
+  padding: 8px 20px;
+  background-color: #08A6E4;
+}
+.calculator .summary .total .total-price {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+.calculator .summary .item {
+  padding: 6px 20px;
+  background-color: #55DFB4;
+  margin-bottom: 8px;
+}
+.calculator .summary .item .price {
+  font-weight: 700;
+  font-size: 1.125rem;
+}
+
 .contact .container {
   max-width: 896px;
   display: flex;

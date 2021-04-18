@@ -1,14 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bestshop</title>
     <link rel="stylesheet" href="css/main.css">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Raleway:wght@300;400;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Raleway:wght@300;400;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
 </head>
+
 <body>
     <header>
         <div class="container">
@@ -36,7 +42,7 @@
                 <p>Open shop on our platform and increase your sales</p>
                 <a href="" class="btn">Open your shop</a>
             </div>
-                <img src="assets/Background.png" alt="Office tools">
+            <img src="assets/Background.png" alt="Office tools">
         </section>
         <section class="statistics">
             <div class="container">
@@ -71,7 +77,8 @@
                 <div class="benefit">
                     <div class="benefit-column">
                         <h2>Be always first</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
                     </div>
                     <div class="benefit-column">
                         <div class="macbook">
@@ -82,7 +89,8 @@
                 <div class="benefit">
                     <div class="benefit-column">
                         <h2>Your shop is where you are!</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
                     </div>
                     <div class="benefit-column">
                         <div class="iphone">
@@ -93,7 +101,8 @@
                 <div class="benefit-last">
                     <div class="element-1">
                         <h2>Increase recognition your brand!</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
                     </div>
                     <div class="element-2">
                         <img src="assets/Trumpet.png" alt="Trumpet">
@@ -150,6 +159,132 @@
                 </div>
             </div>
         </section>
+        <section class="calculator">
+            <h1>Calculate how much you'll pay</h1>
+            <div class="wrapper">
+                <form>
+                    <input type="number" class="number" id="products" min="1" step="1" placeholder="Products quantity">
+                    <input type="number" class="number" id="orders" min="1" step="1" placeholder="Estimated orders in month">
+                    <div class="select" id="package" data-value="">
+                        <div class="input">
+                            Choose package
+                        </div>
+                        <ul class="dropdown">
+                            <li data-value="basic">Basic</li>
+                            <li data-value="professional">Professional</li>
+                            <li data-value="premium">Premium</li>
+                        </ul>
+                    </div>
+                    <label class="checkbox">
+                        <input type="checkbox" id="accounting" />
+                        <span class="check"></span>
+                        <p class="text">Accounting</p>
+                    </label>
+                    <label class="checkbox">
+                        <input type="checkbox" id="terminal" />
+                        <span class="check"></span>
+                        <p class="text">Rental of a payment terminal</p>
+                    </label>
+                </form>
+                <div class="summary">
+                    <ul>
+                        <li class="item" data-id="products">
+                            <span class="type">Products</span>
+                            <span class="calc">20 * $0.5</span>
+                            <span class="price">$10</span>
+                        </li>
+                        <li class="item" data-id="orders">
+                            <span class="type">Orders</span>
+                            <span class="calc">20 * $0.5</span>
+                            <span class="price">$10</span>
+                        </li>
+                        <li class="item" data-id="package">
+                            <span class="type">Package</span>
+                            <span class="calc">Premium</span>
+                            <span class="price">$10</span>
+                        </li>
+                        <li class="item" data-id="accounting">
+                            <span class="type">Accounting</span>
+                            <span class="price">$10</span>
+                        </li>
+                        <li class="item" data-id="terminal">
+                            <span class="type">Terminal</span>
+                            <span class="price">$10</span>
+                        </li>
+                    </ul>
+                    <div class="total" id="total-price">
+                        <span>Total</span>
+                        <span class="total-price">$700</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- <section class="calc">
+            <h2>Calculate how much you’ll pay</h2>
+            <div class="calc__columns">
+              <form class="calc__form">
+                <div class="calc__input">
+                  <input type="number" class="form__input" id="products" min="1" step="1" placeholder="Products quantity"/>
+                </div>
+                <div class="calc__input">
+                  <input type="number" class="form__input" id="orders" min="1" step="1" placeholder="Estimated orders in month"/>
+                </div>
+                <div class="calc__select" id="package" data-value="">
+                  <div class="select__input">
+                    Choose package
+                  </div>
+            
+                  <ul class="select__dropdown">
+                    <li data-value="basic">Basic</li>
+                    <li data-value="professional">Professional</li>
+                    <li data-value="premium">Premium</li>
+                  </ul>
+                </div>
+                <label class="form__checkbox">
+                  <input type="checkbox" id="accounting"/>
+                  <span class="checkbox"></span>
+                  <p class="consent__text">Accounting</p>
+                </label>
+                <label class="form__checkbox">
+                  <input type="checkbox" id="terminal"/>
+                  <span class="checkbox"></span>
+                  <p class="consent__text">Rental of a payment terminal</p>
+                </label>
+              </form>
+            
+              <div class="calc__summary">
+                <ul>
+                  <li class="list__item" data-id="products">
+                    <span class="item__type">Products</span>
+                    <span class="item__calc">20 * $0.5</span>
+                    <span class="item__price">$10</span>
+                  </li>
+                  <li class="list__item" data-id="orders">
+                    <span class="item__type">Orders</span>
+                    <span class="item__calc">20 * $0.5</span>
+                    <span class="item__price">$10</span>
+                  </li>
+                  <li class="list__item" data-id="package">
+                    <span class="item__type">Package</span>
+                    <span class="item__calc">Premium</span>
+                    <span class="item__price">$10</span>
+                  </li>
+                  <li class="list__item" data-id="accounting">
+                    <span class="item__type">Accounting</span>
+                    <span class="item__price">$10</span>
+                  </li>
+                  <li class="list__item" data-id="terminal">
+                    <span class="item__type">Terminal</span>
+                    <span class="item__price">$10</span>
+                  </li>
+                </ul>
+                <div class="summary__total" id="total-price">
+                  <span>Total</span>
+                  <span class="total__price">$700</span>
+                </div>
+              </div>
+            </div>
+        </section>         -->
         <section class="contact">
             <div class="container">
                 <div class="questions">
@@ -174,7 +309,11 @@
                             <label>
                                 <input type="checkbox">
                                 <span></span>
-                                I hereby give consent for my personal data included in my application to be processed for the purposes of the recruitment process under the European Parliament’s and Council of the European Union Regulation on the Protection of Natural Persons as of 27 April 2016, with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (Data Protection Directive)
+                                I hereby give consent for my personal data included in my application to be processed
+                                for the purposes of the recruitment process under the European Parliament’s and Council
+                                of the European Union Regulation on the Protection of Natural Persons as of 27 April
+                                2016, with regard to the processing of personal data and on the free movement of such
+                                data, and repealing Directive 95/46/EC (Data Protection Directive)
                             </label>
                         </div>
                         <button type="submit" class="btn">Send</button>
@@ -195,6 +334,7 @@
             </div>
         </div>
     </footer>
-    
+
 </body>
+
 </html>
