@@ -8,4 +8,4 @@ Tools & technologies:
 
 ### Check it out here:
 
-<a href="https://adamptk.github.io/BestShop/BestShop"><img src="public/FoodTrack.png" alt="FoodTrack" /></a>
+<a href="https://adamptk.github.io/BestShop/BestShop"><img src="BestShop/assets/BestShop.png" alt="BestShop" /></a>
